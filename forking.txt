@@ -1,0 +1,41 @@
+Forking A Repository On Github
+What is forking and how does it work? To Fork a project you are basically cloning
+someone else’s original project from Github and adding it to your repository. This
+will allow you to modify the project without interfering with the owner’s original
+project.
+
+1)Head over to Github and create an account if you don’t have one already.
+
+2)Next search for the repository you would like to fork.
+
+3)Click the fork button in the upper-righthand corner to add to your repository.
+
+To add this forked project to our local machine, we will go back into our terminal and
+type the command
+
+Clone The Forked Repo
+git clone https://github.com/your-username/forked-repo.git
+
+Make Changes :-
+git add . # To stage the changes
+git commit -m "Enter Your commit message here"
+git push origin main # Replace 'main' with the branch you want to push to.
+
+Updating Your Fork: If you wanna keep your forked repo up-to-date with
+the latest awesomeness from the original repo, no worries! Here’s the secret
+sauce! First, add the original repo as an “upstream” remote with this
+command:
+git remote add upstream
+https://github.com/original-repo-owner/original-repo.git
+
+Then, fetch all the juicy changes from the upstream repo using:
+git fetch upstream
+
+Now, it’s time to merge those updates into your local repo! Just
+switch to the branch you wanna update (usually ‘master’) and run:
+
+git checkout master
+git merge upstream/master # Replace 'master' with your branch name if
+it's different.
+git push origin master
+Done!

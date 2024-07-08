@@ -1,0 +1,6 @@
+id:
+● This command displays the user and group IDs of the current user or a specified user.
+● It provides information about the user's UID (user ID), GID (group ID), and supplementary
+group memberships.
+● Example: id displays the user and group IDs of the current user.
+Done!

@@ -1,0 +1,8 @@
+uname:
+● This command displays system information about the current operating system.
+● Commonly used options include:
+● -a: Print all system information.
+● -s: Print the kernel name.
+● -r: Print the kernel release.
+● -m: Print the machine hardware name
+Done!

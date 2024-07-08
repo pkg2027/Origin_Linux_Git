@@ -1,0 +1,3 @@
+Cat /etc/passwd:
+● It will show list of users
+Done!

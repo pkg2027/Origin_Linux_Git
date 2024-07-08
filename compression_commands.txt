@@ -1,0 +1,44 @@
+1. zip:
+● The zip command is used to compress files and directories into a ZIP archive
+format.
+● It can also be used to extract files from ZIP archives.
+● Syntax for compression: zip [options] zipfile files/directories
+● Syntax for extraction: unzip zipfile
+● Example for compression: zip -r archive.zip directory/ compresses the
+contents of the "directory" into a ZIP archive named "archive.zip".
+● Example for extraction: unzip archive.zip extracts the contents of the ZIP
+archive "archive.zip" into the current directory.
+
+###
+
+2. Unzip, gunzip:
+● The unzip command is used to decompress files that have been compressed
+using the gzip algorithm.
+● It can decompress files with extensions like .gz, .z, .Z.
+● Syntax: unzip [options] filename
+● Example: unzip file.txt.zip decompresses the file "file.txt.zip" and creates a
+new uncompressed file "file.txt".
+
+###
+
+3. gzip:
+● The gzip command is used to compress files using the gzip algorithm.
+● It replaces the original file with a compressed version having the extension .gz.
+● Syntax: gzip [options] filename
+● Example: gzip file.txt compresses the file "file.txt" and creates a new
+compressed file "file.txt.gz".
+
+###
+
+4. tar:
+● The tar command is used to create, list, and extract files from tar archives.
+● It can be used with various compression algorithms (e.g., gzip, bzip2) to create
+compressed tar archives.
+● Syntax for compression: tar -czvf archive.tar.gz files/directories
+● Syntax for extraction: tar -xzvf archive.tar.gz
+● Example for compression: tar -czvf archive.tar.gz directory/ creates a
+compressed tar archive named "archive.tar.gz" containing the contents of the
+"directory".
+● Example for extraction: tar -xzvf archive.tar.gz extracts the contents of the
+compressed tar archive "archive.tar.gz" into the current directory
+Done!

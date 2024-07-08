@@ -1,0 +1,69 @@
+1. scp (Secure Copy):
+● scp is a command-line tool used to securely transfer files between a local and a remote
+host or between two remote hosts over SSH (Secure Shell).
+● Syntax for copying from local to remote: scp [options] local_file
+remote_user@remote_host:remote_path
+● Syntax for copying from remote to local: scp [options]
+remote_user@remote_host:remote_path local_path
+● Example: scp file.txt user@example.com:/remote/directory/ copies the file
+"file.txt" from the local system to the remote host "example.com" into the directory
+"/remote/directory/".
+1. Copy from local to server
+scp -i "/Users/kamal/OneDrive/Desktop/votingproject.pem" ffilee2.txt
+ubuntu@ec2-99-79-194-251.ca-central-1.compute.amazonaws.com:/home/ubuntu
+Create file on local
+Now copy this file from local to server:
+2. Copy from server to local
+scp -i "/Users/kamal/OneDrive/Desktop/votingproject.pem" -r
+ubuntu@ec2-99-79-194-251.ca-central-1.compute.amazonaws.com
+:/home/ubuntu/cloud1 .
+
+###
+
+2. rsync:
+● rsync is a powerful command-line utility used for file synchronization and transfer.
+● It is particularly useful for synchronizing files between local and remote systems or
+between directories on the same system.
+● Syntax: rsync [options] source destination
+● Example: rsync -avz /local/directory/
+user@example.com:/remote/directory/ synchronizes the contents of the local
+directory "/local/directory/" with the directory "/remote/directory/" on the remote host
+"example.com".
+
+###
+
+3. sftp (SSH File Transfer Protocol):
+● sftp is a command-line tool and interactive file transfer protocol similar to FTP, but it
+operates over an encrypted SSH connection.
+● It provides a secure way to transfer files between hosts and perform file operations
+such as listing directories, uploading, and downloading files.
+● Syntax: sftp [options] user@hostname
+● Example: sftp user@example.com starts an interactive SFTP session with the remote
+host "example.com".
+
+###
+
+4. wget and curl:
+● wget and curl are command-line tools used for downloading files from remote
+servers.
+● They support various protocols, including HTTP, HTTPS, FTP, and FTPS.
+● Syntax for wget: wget [options] URL
+● Syntax for curl: curl [options] URL
+● Example with wget: wget http://example.com/file.txt downloads the file
+"file.txt" from the URL "http://example.com/".
+● Example with curl: curl -O http://example.com/file.txt downloads the file
+"file.txt" from the URL "http://example.com/".
+
+###
+
+5. FTP (File Transfer Protocol):
+● FTP is a standard network protocol used for transferring files between a client and a
+server on a computer network.
+● It operates over TCP/IP and supports both ASCII and binary file transfer modes.
+● Various FTP clients such as ftp, lftp, and graphical clients like FileZilla are available
+for transferring files using FTP.
+These file transfer commands and protocols offer different features and capabilities, allowing users to
+transfer files securely and efficiently between systems in a Unix-like environment. The choice of
+command or protocol depends on factors such as security requirements, network configuration, and
+user preferences
+Done!

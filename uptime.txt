@@ -1,0 +1,8 @@
+uptime:
+● This command displays how long the system has been running and the current system
+load average.
+● It typically shows the current time, the length of time the system has been up, the
+number of users logged in, and the system load averages for the past 1, 5, and 15
+minutes.
+● Example: uptime displays system uptime and load averages.
+Done!

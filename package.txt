@@ -1,0 +1,15 @@
+apt, yum, dnf, pacman, portage:
+● These are package management commands used in various Linux distributions to
+install, update, and manage software packages.
+● They are specific to different package management systems used by different
+distributions:
+● apt: Used by Debian-based distributions like Ubuntu.
+● yum and dnf: Used by RPM-based distributions like Fedora and CentOS/RHEL
+(dnf is the newer version).
+● pacman: Used by Arch Linux and its derivatives.
+● portage: Used by Gentoo Linux.
+● Example: apt install <package> installs a package using the APT package
+manager.
+Sudo apt-get update
+Sudo apt-get install docker.io -y
+Done!

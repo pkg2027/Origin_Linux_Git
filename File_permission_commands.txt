@@ -1,0 +1,60 @@
+1. umask:
+● The umask command sets the default file permissions for newly created files and
+directories.
+● It works by subtracting the specified file mode from the default permission settings
+(usually 666 for files and 777 for directories).
+● The result is the actual permission that is applied when a new file or directory is
+created.
+● Syntax: umask [mode]
+● Example: umask 022 sets the default permission for newly created files to 644 and
+for directories to 755.
+
+###
+
+2. ls -l:
+● The ls -l command is used to list files and directories in long format, showing
+detailed information about permissions, ownership, size, modification date, and
+filename.
+● It displays file permissions in the format -rwxr-xr-x, where the first character
+indicates file type, and the next nine characters represent permission settings for
+the owner, group, and others.
+● Syntax: ls -l [path]
+● Example: ls -l /home/user lists files and directories in long format in the
+/home/user directory.
+
+###
+
+3. chmod:
+● The chmod command is used to change the permissions of files and directories.
+● It allows you to add, remove, or set specific permissions for the owner, group, and
+others.
+● Permissions can be specified using symbolic notation (e.g., u+r, g-w, o+x) or octal
+notation (e.g., 755, 644).
+● Syntax: chmod [options] mode file
+● Example: chmod u+x script.sh adds execute permission for the owner to the file
+script.sh.
+
+###
+
+4. chown:
+● The chown command is used to change the ownership of files and directories.
+● It allows you to change both the user owner and the group owner of a file or
+directory.
+● Syntax: chown [options] owner[:group] file
+● Example: chown user:group file.txt changes the owner of the file file.txt to
+user and the group owner to group.
+
+###
+
+5. chgrp:
+● The chgrp command is used to change the group ownership of files and
+directories.
+● It allows you to change the group owner of a file or directory without changing the
+user owner.
+● Syntax: chgrp [options] group file
+● Example: chgrp group file.txt changes the group owner of the file file.txt
+to group.
+These file permission commands are essential for managing access control and security settings
+on Linux systems, allowing administrators to control who can read, write, and execute files and
+directories.
+Done!

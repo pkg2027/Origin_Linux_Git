@@ -1,0 +1,6 @@
+who:
+● This command displays information about currently logged-in users.
+● It shows the username, terminal, login time, and source IP address (if available) of each
+logged-in user.
+● Example: who displays a list of logged-in users.
+Done!

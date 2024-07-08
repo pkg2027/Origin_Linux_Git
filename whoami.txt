@@ -1,0 +1,5 @@
+whoami:
+● This command prints the username of the current user.
+● It simply returns the username associated with the current user's session.
+● Example: whoami displays the current username.
+Done!

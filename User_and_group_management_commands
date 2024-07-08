@@ -1,0 +1,80 @@
+1. useradd:
+● This command is used to create a new user account on the system.
+● Syntax: useradd [options] username
+● Common options:
+● -m: Create the user's home directory if it doesn't exist.
+● -s <shell>: Set the user's login shell.
+● Example: useradd -m john creates a new user account named "john" with a
+home directory.
+
+###
+
+2. whoami:
+● This command prints the username of the current user.
+● It simply returns the username associated with the current user's session.
+● Example: whoami displays the current username.
+
+###
+
+3. passwd:
+● This command is used to change a user's password.
+● If run without any arguments, it prompts the current user to change their
+password.
+● Syntax: passwd [username]
+● Example: passwd john allows the user "john" to change their password.
+
+###
+
+4. su:
+● This command allows switching to another user account.
+● By default, it switches to the root user account, but you can specify another user's
+username as an argument.
+● Syntax: su [username]
+● Example: su pardeep switches to the user account "pardeep".
+
+###
+
+5. userdel:
+● This command is used to delete a user account from the system.
+● By default, it only removes the user's entry from the /etc/passwd file and does
+not delete their home directory or any files owned by the user.
+● Syntax: userdel [options] username
+● Common options:
+● -r: Remove the user's home directory and mail spool.
+● Example: userdel -r pardeep deletes the user account "pardeep" and removes
+their home directory.
+
+###
+
+6. groupadd:
+● This command is used to create a new group on the system.
+● Syntax: groupadd [options] groupname
+● Example: groupadd developers creates a new group named "developers".
+Cat /etc/group
+
+###
+
+7. gpasswd:
+● This command is used to administer the /etc/group file and manage group
+membership.
+● Syntax:
+● To add a user to a group: gpasswd -a username groupname
+● To set the group's password: gpasswd groupname
+● To make a user the group's owner: gpasswd -m username groupname
+● Example: gpasswd -a pardeep developers adds the user "pardeep" to the
+group "developers".
+To add multiple users
+● sudogpasswd -M user1,user2,user3,user4
+To list multiple users
+●cat/etc/group
+###
+
+8. groupdel:
+● This command is used to delete a group from the system.
+● Syntax: groupdel groupname
+● Example: groupdel developers deletes the group "developers" from the system.
+These commands are essential for managing user accounts, groups, and permissions on a Linux
+system, allowing administrators to control access to resources and perform user-related tasks
+efficiently.
+
+Done!

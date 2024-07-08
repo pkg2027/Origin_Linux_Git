@@ -1,0 +1,6 @@
+which:
+● This command displays the full path to the executable file of a given command.
+● It helps to identify the location of a command's executable file in the system's PATH
+environment variable.
+● Example: which ls displays the path to the ls command.
+Done!

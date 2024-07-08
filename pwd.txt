@@ -1,0 +1,2 @@
+The 'pwd' command, short for 'print working directory', is one of the most basic and commonly used commands in Linux. It's a simple yet powerful tool that displays the full pathname of the current directory you're in.
+Done!

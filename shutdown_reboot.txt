@@ -1,0 +1,8 @@
+shutdown and reboot:
+● These commands are used to shut down or reboot the system.
+● The shutdown command can be used to schedule a system shutdown or reboot at a
+specified time, and it also allows sending a message to users.
+● Example: shutdown -r now reboots the system immediately.
+● Example: shutdown +10 "System will be rebooting in 10 minutes"
+schedules a system reboot in 10 minutes.
+Done!
